@@ -1,0 +1,3 @@
+requests
+paho-mqtt
+homeassistant-mqtt-binding
