@@ -19,9 +19,9 @@ setup(
         'Gitub Repo': 'https://github.com/garbled1/neptuneapex-hass-mqtt',
     },
     install_requires=[
-        'paho-mqtt',
         'requests',
         'homeassistant-mqtt-binding',
+        'paho-mqtt',
     ],
     python_requires='>3.9',
     long_description=long_description,
