@@ -11,7 +11,7 @@ setup(
     version="1.0",
     description="Feed data from a neptune apex into HASS via MQTT",
     license='GPL',
-    packages=['neptuneapex-hass-mqtt'],
+    packages=['neptuneapex_hass_mqtt'],
     author='Tim Rightnour',
     author_email='the@garbled.one',
     url='https://github.com/garbled1/neptuneapex-hass-mqtt',

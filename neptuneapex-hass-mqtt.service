@@ -3,7 +3,7 @@ Description=Neptune Apex HASS MQTT Gateway
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/influx_neptuneapex --host apex --broker X -u X -w X
+ExecStart=/usr/local/bin/neptuneapex-hass-mqtt --host apex --broker X -u X -w X
 Restart=on-failure
 
 [Install]
