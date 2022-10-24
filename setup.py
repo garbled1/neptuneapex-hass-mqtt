@@ -28,7 +28,7 @@ setup(
     long_description_content_type='text/markdown',
     entry_points={
         'console_scripts': [
-            'neptuneapex-hass-mqtt=neptuneapex-hass-mqtt.__main__:main'
+            'neptuneapex-hass-mqtt=neptuneapex_hass_mqtt.__main__:main'
         ]
     }
 )
