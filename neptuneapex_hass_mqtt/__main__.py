@@ -246,7 +246,7 @@ def poll_apex(mq_client, args):
             client=mq_client,
             device=ha_dev,
         )
-        if output['type'] == 'variable' or output['type'] == 'serial':
+        if output['type'] == 'variable' or output['type'] == 'serial' or output['type'] == 'sky' or output['type'] == 'moon':
             mqtt_apex[output['did']] = MqttSensorNone(
                 base_settings,
                 device_class=HaDeviceClass.NONE,
@@ -374,7 +374,7 @@ def poll_apex(mq_client, args):
             for idx,output in enumerate(json_data['istat']['outputs']):
                 if output['did'] in mqtt_apex:
                     # all outputs are special
-                    if output['type'] == 'variable' or output['type'] == 'serial':
+                    if output['type'] == 'variable' or output['type'] == 'serial' or output['type'] == 'sky' or output['type'] == 'moon':
                         if output['status'][1] == '':
                             mqtt_apex[output['did']].publish_state(0.0)
                         else:
