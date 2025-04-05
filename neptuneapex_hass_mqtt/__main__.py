@@ -210,7 +210,7 @@ def poll_apex(mq_client, args):
         if input['type'] == 'volts':
             mqtt_apex[input['did']] = MqttSensor(
                 base_settings,
-                unit='Vac',
+                unit='V',
                 device_class=HaDeviceClass.VOLTAGE,
             )
         if input['type'] == 'alk':

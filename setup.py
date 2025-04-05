@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="neptuneapex-hass-mqtt",
-    version="1.0",
+    version="1.1",
     description="Feed data from a neptune apex into HASS via MQTT",
     license='GPL',
     packages=['neptuneapex_hass_mqtt'],
